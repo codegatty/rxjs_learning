@@ -18,4 +18,7 @@ const observer={
 
 const subscription = observable.subscribe(observer)
 
-subscription.unsubscribe()
+setTimeout(()=>{
+    subscription.unsubscribe()
+},2000)
+

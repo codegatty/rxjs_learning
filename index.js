@@ -111,4 +111,7 @@ const observer={//observer watches for the data emission form the observable unt
 }
 
 const subscription = observable.subscribe(observer)//this is we are subscribing the observer to get data from the respective observable
-subscription.unsubscribe()
+setTimeout(()=>{
+    subscription.unsubscribe()
+},2000)
+
